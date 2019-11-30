@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">ThermalComfortStudy</string>
+
+    <!-- Login -->
+    <string name="prompt_username">username</string>
+    <string name="prompt_password">password</string>
+    <string name="action_login">Login</string>
+    <string name="instruction">Before logging in, please make sure that:\n
+    1. you are logged in to Microsoft Health app and have the app running,\n
+    2. your Microsoft Band is paired with your phone, and\n
+    3. you are wearing the band.</string>
+    <string name="action_logout">Logout</string>
+    <string name="data_upload_on_logout">Uploading data to Sensor Andrew...</string>
+
+    <!-- Login shared preferences -->
+    <string name="login_storage">LoginSharedPreferences</string>
+    <string name="is_logged_in_key">isLoggedIn</string>
+    <string name="username_key">username</string>
+    <string name="password_key">password</string>
+    <string name="last_band_streaming_time_key">lastBandStreamingTime</string>
+    <string name="last_survey_notification_time_key">lastSurveyNotificationTime</string>
+    <string name="last_survey_response_time_key">lastSurveyResponseTime</string>
+    <string name="last_data_upload_time_key">lastDataUploadTime</string>
+
+    <!-- MS Band -->
+    <string name="band_streaming">Streaming</string>
+    <string name="band_not_streaming">Not Streaming</string>
+    <string name="band_conn_message">BandConnMessage</string>
+
+    <!-- Sensor Andrew connection -->
+    <string name="sa_conn_status_message">SAConnStatusMessage</string>
+    <string name="sa_upload_data_result_message">SAUploadDataResultMessage</string>
+    <string name="sa_upload_data_completed_prompt">Uploaded all data to Sensor Andrew</string>
+    <string name="sa_upload_data_succeeded_prompt">Uploaded data to Sensor Andrew</string>
+    <string name="sa_upload_data_failed_prompt">Failed to upload data to Sensor Andrew</string>
+    <string name="check_connection_prompt">Please make sure you have Internet connection</string>
+    <string name="check_connection_retry_prompt">Please make sure you have Internet connection\nand try again</string>
+
+    <!-- Survey response shared preferences -->
+    <string name="survey_response_storage">SurveyResponseSharedPreferences</string>
+    <string name="prev_survey_response_available_key">previousSurveyResponseAvailable</string>
+
+    <!-- Survey -->
+    <string name="submission_confirm">Your response has been submitted.</string>
+
+    <!-- Clothing options -->
+    <string-array name="clothing_top_array">
+        <item>Blouse, sleeveless</item>
+        <item>Short-sleeve shirt/T-shirt</item>
+        <item>Long-sleeve shirt</item>
+        <item>Sweater</item>
+        <item>Dress, sleeveless, scoop-neck</item>
+        <item>Dress, short-sleeve</item>
+        <item>Dress, long-sleeve (thin)</item>
+        <item>Dress, long-sleeve (thick)</item>
+    </string-array>
+
+    <string-array name="clothing_bottom_array">
+        <item>Shorts</item>
+        <item>Long pants (thin)</item>
+        <item>Long pants (thick)</item>
+        <item>Skirt (thin)</item>
+        <item>Skirt (thick)</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="clothing_outerLayer_array">
+        <item>Vest (thin)</item>
+        <item>Vest (thick)</item>
+        <item>Sweater/Jacket (thin)</item>
+        <item>Sweater/Jacket (thick)</item>
+        <item>Coat/Suit jacket (thick)</item>
+        <item>None</item>
+    </string-array>
+
+    <!-- Activity options -->
+    <string-array name="activity_array">
+        <item>Working</item>
+        <item>Meeting</item>
+        <item>Giving a presentation</item>
+        <item>Lunchtime activity</item>
+        <item>Socializing</item>
+        <item>Recreation</item>
+        <item>Other</item>
+    </string-array>
+</resources>

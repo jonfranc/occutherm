@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="bosch.smartcampus.thermalcomfortstudy.ui.ActionReportActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+
+            <fragment
+                android:name="bosch.smartcampus.thermalcomfortstudy.ui.BandStreamingStatusFragment"
+                android:id="@+id/band_conn_status_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_band_streaming_status" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="What action(s) did you take?"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thermostat setpoint"
+                    android:id="@+id/action_thermostat"
+                    android:textSize="20dp"
+                    android:checked="false"
+                    android:layout_alignParentLeft="true" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cooler"
+                    android:id="@+id/action_thermostat_direction"
+                    android:layout_alignParentRight="true"
+                    android:checked="false"
+                    android:enabled="false" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Space heater"
+                    android:id="@+id/action_spaceHeater"
+                    android:textSize="20dp"
+                    android:checked="false"
+                    android:layout_alignParentLeft="true" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/action_spaceHeater_direction"
+                    android:checked="false"
+                    android:layout_alignParentRight="true"
+                    android:text="Turn off"
+                    android:enabled="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fan"
+                    android:id="@+id/action_fan"
+                    android:textSize="20dp"
+                    android:checked="false"
+                    android:layout_alignParentLeft="true" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/action_fan_direction"
+                    android:layout_alignParentRight="true"
+                    android:checked="false"
+                    android:text="Turn off"
+                    android:enabled="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Additional layer(s)"
+                    android:id="@+id/action_layer"
+                    android:textSize="20dp"
+                    android:checked="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/action_layer_direction" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Jacket, sweater, coat, blanket, etc."
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/action_layer" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/action_layer_direction"
+                    android:layout_alignParentRight="true"
+                    android:checked="false"
+                    android:text="Take off"
+                    android:enabled="false" />
+
+            </RelativeLayout>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other (please describe):"
+                android:id="@+id/action_other"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/action_description"
+                android:hint="Enter text"
+                android:enabled="false"
+                android:layout_marginBottom="10dp" />
+
+            <fragment
+                android:name="bosch.smartcampus.thermalcomfortstudy.ui.ThermalComfortQuestionFragment"
+                android:id="@+id/sensation_questions_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_thermal_comfort_question" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:id="@+id/submit_action_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit Report"
+                android:layout_gravity="center_horizontal"
+                android:onClick="submitActionReport"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back to Main"
+                android:layout_gravity="center_horizontal"
+                android:onClick="backToMain" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

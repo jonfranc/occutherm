@@ -1,0 +1,979 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A116E2A74A9D1B23639915E /* Pods_Thermal_Comfort_Study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0518CDA74CE0AB84329CADFE /* Pods_Thermal_Comfort_Study.framework */; };
+		20B2A164607B45E08B1E2189 /* Pods_Thermal_Comfort_StudyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAAF98E68AB86D2FC8055D70 /* Pods_Thermal_Comfort_StudyUITests.framework */; };
+		4D03A3641DB15E7F0095A474 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03A3631DB15E7F0095A474 /* Activity.swift */; };
+		4D03A3661DB15EAB0095A474 /* AdaptiveComfortAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03A3651DB15EAB0095A474 /* AdaptiveComfortAction.swift */; };
+		4D03A3681DB160800095A474 /* BandDataAggregate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03A3671DB160800095A474 /* BandDataAggregate.swift */; };
+		4D03A36A1DB161020095A474 /* LocalDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03A3691DB161020095A474 /* LocalDataStorage.swift */; };
+		4D03A36C1DB161540095A474 /* ThermalComfort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03A36B1DB161540095A474 /* ThermalComfort.swift */; };
+		4D03A36E1DB161820095A474 /* BandDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03A36D1DB161820095A474 /* BandDataItem.swift */; };
+		4D03A3701DB161980095A474 /* MinuteCaloriesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03A36F1DB161980095A474 /* MinuteCaloriesItem.swift */; };
+		4D03A3721DB161AB0095A474 /* ExtTemperatureItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03A3711DB161AB0095A474 /* ExtTemperatureItem.swift */; };
+		4D03A3741DB161C00095A474 /* GSRItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03A3731DB161C00095A474 /* GSRItem.swift */; };
+		4D03A3761DB161CD0095A474 /* SkinTemperatureItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03A3751DB161CD0095A474 /* SkinTemperatureItem.swift */; };
+		4D03A3781DB162370095A474 /* MSBandService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03A3771DB162370095A474 /* MSBandService.swift */; };
+		4D03A37C1DB1656F0095A474 /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D03A37B1DB1656F0095A474 /* MicrosoftBandKit_iOS.framework */; };
+		4D27B8351DBA8EFF000B5F64 /* ActivityItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D27B8341DBA8EFF000B5F64 /* ActivityItem.swift */; };
+		4D27B8371DBA9236000B5F64 /* ActivityDescriptionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D27B8361DBA9236000B5F64 /* ActivityDescriptionItem.swift */; };
+		4D27B8391DBA93C5000B5F64 /* BottomClothingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D27B8381DBA93C5000B5F64 /* BottomClothingItem.swift */; };
+		4D27B83B1DBA94B8000B5F64 /* ClothingInsulationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D27B83A1DBA94B8000B5F64 /* ClothingInsulationItem.swift */; };
+		4D27B83D1DBA95A1000B5F64 /* OuterLayerClothingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D27B83C1DBA95A1000B5F64 /* OuterLayerClothingItem.swift */; };
+		4D27B83F1DBA9839000B5F64 /* ThermalComfortItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D27B83E1DBA9839000B5F64 /* ThermalComfortItem.swift */; };
+		4D27B8411DBA98BA000B5F64 /* TopClothingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D27B8401DBA98BA000B5F64 /* TopClothingItem.swift */; };
+		4D2D7F591DA8002900F80E4B /* SensorAndrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2D7F581DA8002900F80E4B /* SensorAndrew.swift */; };
+		4D35284D1DE5ED5C00B850C7 /* FineGrainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D35284C1DE5ED5C00B850C7 /* FineGrainData.swift */; };
+		4D35284F1DE5F16D00B850C7 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D35284E1DE5F16D00B850C7 /* Point.swift */; };
+		4D3B6A661DB7D2C200B5186C /* AdaptiveComfortActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B6A651DB7D2C200B5186C /* AdaptiveComfortActionItem.swift */; };
+		4D65F7F81DE4C4D6008301B9 /* libALPS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D65F7F71DE4C4D6008301B9 /* libALPS.a */; };
+		4D65F8021DE4CC4F008301B9 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D65F8011DE4CC4F008301B9 /* libicucore.tbd */; };
+		4D65F8041DE4CC57008301B9 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D65F8031DE4CC57008301B9 /* libresolv.tbd */; };
+		4D65F8061DE4CC60008301B9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D65F8051DE4CC60008301B9 /* libz.tbd */; };
+		4D6917C31DB94CA90004D0A9 /* TopClothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6917C21DB94CA90004D0A9 /* TopClothing.swift */; };
+		4D6917C51DB96CD80004D0A9 /* BottomClothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6917C41DB96CD80004D0A9 /* BottomClothing.swift */; };
+		4D6917C71DB96EC90004D0A9 /* OuterLayerClothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6917C61DB96EC90004D0A9 /* OuterLayerClothing.swift */; };
+		4D6917C91DBA86230004D0A9 /* SurveyDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6917C81DBA86230004D0A9 /* SurveyDataItem.swift */; };
+		4DA8A1EE1DC24D1500E28584 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA8A1ED1DC24D1500E28584 /* UserNotifications.framework */; };
+		4DACAF2A1DBE5FE800F26314 /* SurveyQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DACAF291DBE5FE800F26314 /* SurveyQuestion.swift */; };
+		4DDC39081DA2D5D100C81F66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDC39071DA2D5D100C81F66 /* AppDelegate.swift */; };
+		4DDC390A1DA2D5D100C81F66 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDC39091DA2D5D100C81F66 /* LogInViewController.swift */; };
+		4DDC390D1DA2D5D100C81F66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDC390B1DA2D5D100C81F66 /* Main.storyboard */; };
+		4DDC39101DA2D5D100C81F66 /* Thermal_Comfort_Study.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DDC390E1DA2D5D100C81F66 /* Thermal_Comfort_Study.xcdatamodeld */; };
+		4DDC39121DA2D5D100C81F66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DDC39111DA2D5D100C81F66 /* Assets.xcassets */; };
+		4DDC39151DA2D5D100C81F66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDC39131DA2D5D100C81F66 /* LaunchScreen.storyboard */; };
+		4DDC39201DA2D5D100C81F66 /* Thermal_Comfort_StudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDC391F1DA2D5D100C81F66 /* Thermal_Comfort_StudyTests.swift */; };
+		4DDC392B1DA2D5D100C81F66 /* Thermal_Comfort_StudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDC392A1DA2D5D100C81F66 /* Thermal_Comfort_StudyUITests.swift */; };
+		4DDC39391DA2DAE900C81F66 /* MainActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDC39381DA2DAE900C81F66 /* MainActivityViewController.swift */; };
+		4DDC393B1DA2DE3E00C81F66 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDC393A1DA2DE3E00C81F66 /* SurveyViewController.swift */; };
+		4DDC393D1DA2DE5000C81F66 /* ActionReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDC393C1DA2DE5000C81F66 /* ActionReportViewController.swift */; };
+		CA23899BDEF59C5EB83CD4C1 /* Pods_Thermal_Comfort_StudyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86AA8D45DEF9E13C5B0310F7 /* Pods_Thermal_Comfort_StudyTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DDC391C1DA2D5D100C81F66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DDC38FC1DA2D5D100C81F66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DDC39031DA2D5D100C81F66;
+			remoteInfo = "Thermal Comfort Study";
+		};
+		4DDC39271DA2D5D100C81F66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DDC38FC1DA2D5D100C81F66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DDC39031DA2D5D100C81F66;
+			remoteInfo = "Thermal Comfort Study";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0518CDA74CE0AB84329CADFE /* Pods_Thermal_Comfort_Study.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thermal_Comfort_Study.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0791A8719CD056A3BE33C196 /* Pods-Thermal Comfort StudyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thermal Comfort StudyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Thermal Comfort StudyUITests/Pods-Thermal Comfort StudyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		298D764A741123BEDCAA0A82 /* Pods-Thermal Comfort Study.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thermal Comfort Study.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Thermal Comfort Study/Pods-Thermal Comfort Study.debug.xcconfig"; sourceTree = "<group>"; };
+		423EA3C8EA7660D1303F0998 /* Pods-Thermal Comfort StudyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thermal Comfort StudyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Thermal Comfort StudyTests/Pods-Thermal Comfort StudyTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D03A3631DB15E7F0095A474 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		4D03A3651DB15EAB0095A474 /* AdaptiveComfortAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptiveComfortAction.swift; sourceTree = "<group>"; };
+		4D03A3671DB160800095A474 /* BandDataAggregate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandDataAggregate.swift; sourceTree = "<group>"; };
+		4D03A3691DB161020095A474 /* LocalDataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataStorage.swift; sourceTree = "<group>"; };
+		4D03A36B1DB161540095A474 /* ThermalComfort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermalComfort.swift; sourceTree = "<group>"; };
+		4D03A36D1DB161820095A474 /* BandDataItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandDataItem.swift; sourceTree = "<group>"; };
+		4D03A36F1DB161980095A474 /* MinuteCaloriesItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinuteCaloriesItem.swift; sourceTree = "<group>"; };
+		4D03A3711DB161AB0095A474 /* ExtTemperatureItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtTemperatureItem.swift; sourceTree = "<group>"; };
+		4D03A3731DB161C00095A474 /* GSRItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSRItem.swift; sourceTree = "<group>"; };
+		4D03A3751DB161CD0095A474 /* SkinTemperatureItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkinTemperatureItem.swift; sourceTree = "<group>"; };
+		4D03A3771DB162370095A474 /* MSBandService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBandService.swift; sourceTree = "<group>"; };
+		4D03A3791DB164F30095A474 /* MSBSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MSBSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		4D03A37B1DB1656F0095A474 /* MicrosoftBandKit_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MicrosoftBandKit_iOS.framework; sourceTree = "<group>"; };
+		4D27B8341DBA8EFF000B5F64 /* ActivityItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityItem.swift; sourceTree = "<group>"; };
+		4D27B8361DBA9236000B5F64 /* ActivityDescriptionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDescriptionItem.swift; sourceTree = "<group>"; };
+		4D27B8381DBA93C5000B5F64 /* BottomClothingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomClothingItem.swift; sourceTree = "<group>"; };
+		4D27B83A1DBA94B8000B5F64 /* ClothingInsulationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingInsulationItem.swift; sourceTree = "<group>"; };
+		4D27B83C1DBA95A1000B5F64 /* OuterLayerClothingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OuterLayerClothingItem.swift; sourceTree = "<group>"; };
+		4D27B83E1DBA9839000B5F64 /* ThermalComfortItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermalComfortItem.swift; sourceTree = "<group>"; };
+		4D27B8401DBA98BA000B5F64 /* TopClothingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopClothingItem.swift; sourceTree = "<group>"; };
+		4D2D7F581DA8002900F80E4B /* SensorAndrew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorAndrew.swift; sourceTree = "<group>"; };
+		4D35284C1DE5ED5C00B850C7 /* FineGrainData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FineGrainData.swift; sourceTree = "<group>"; };
+		4D35284E1DE5F16D00B850C7 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		4D3B6A651DB7D2C200B5186C /* AdaptiveComfortActionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptiveComfortActionItem.swift; sourceTree = "<group>"; };
+		4D65F7F71DE4C4D6008301B9 /* libALPS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libALPS.a; sourceTree = "<group>"; };
+		4D65F7FD1DE4C731008301B9 /* ALPS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ALPS.h; path = "Thermal Comfort Study/ALPS.h"; sourceTree = "<group>"; };
+		4D65F7FE1DE4C744008301B9 /* SRWebSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = "Thermal Comfort Study/SRWebSocket.h"; sourceTree = "<group>"; };
+		4D65F8011DE4CC4F008301B9 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		4D65F8031DE4CC57008301B9 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		4D65F8051DE4CC60008301B9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4D6917C21DB94CA90004D0A9 /* TopClothing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopClothing.swift; sourceTree = "<group>"; };
+		4D6917C41DB96CD80004D0A9 /* BottomClothing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomClothing.swift; sourceTree = "<group>"; };
+		4D6917C61DB96EC90004D0A9 /* OuterLayerClothing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OuterLayerClothing.swift; sourceTree = "<group>"; };
+		4D6917C81DBA86230004D0A9 /* SurveyDataItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyDataItem.swift; sourceTree = "<group>"; };
+		4DA8A1ED1DC24D1500E28584 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		4DACAF291DBE5FE800F26314 /* SurveyQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyQuestion.swift; sourceTree = "<group>"; };
+		4DDC39041DA2D5D100C81F66 /* Thermal Comfort Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thermal Comfort Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDC39071DA2D5D100C81F66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DDC39091DA2D5D100C81F66 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		4DDC390C1DA2D5D100C81F66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4DDC390F1DA2D5D100C81F66 /* Thermal_Comfort_Study.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Thermal_Comfort_Study.xcdatamodel; sourceTree = "<group>"; };
+		4DDC39111DA2D5D100C81F66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DDC39141DA2D5D100C81F66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DDC39161DA2D5D100C81F66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DDC391B1DA2D5D100C81F66 /* Thermal Comfort StudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Thermal Comfort StudyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDC391F1DA2D5D100C81F66 /* Thermal_Comfort_StudyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thermal_Comfort_StudyTests.swift; sourceTree = "<group>"; };
+		4DDC39211DA2D5D100C81F66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DDC39261DA2D5D100C81F66 /* Thermal Comfort StudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Thermal Comfort StudyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDC392A1DA2D5D100C81F66 /* Thermal_Comfort_StudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thermal_Comfort_StudyUITests.swift; sourceTree = "<group>"; };
+		4DDC392C1DA2D5D100C81F66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DDC39381DA2DAE900C81F66 /* MainActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainActivityViewController.swift; sourceTree = "<group>"; };
+		4DDC393A1DA2DE3E00C81F66 /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		4DDC393C1DA2DE5000C81F66 /* ActionReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionReportViewController.swift; sourceTree = "<group>"; };
+		86AA8D45DEF9E13C5B0310F7 /* Pods_Thermal_Comfort_StudyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thermal_Comfort_StudyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24EF13D0F6D58CF68DBC073 /* Pods-Thermal Comfort Study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thermal Comfort Study.release.xcconfig"; path = "Pods/Target Support Files/Pods-Thermal Comfort Study/Pods-Thermal Comfort Study.release.xcconfig"; sourceTree = "<group>"; };
+		B6BA2CD2CE3A8F773148EC6F /* Pods-Thermal Comfort StudyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thermal Comfort StudyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Thermal Comfort StudyTests/Pods-Thermal Comfort StudyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BED09C19DF9E2AD8E512B7BF /* Pods-Thermal Comfort StudyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thermal Comfort StudyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Thermal Comfort StudyUITests/Pods-Thermal Comfort StudyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DAAF98E68AB86D2FC8055D70 /* Pods_Thermal_Comfort_StudyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thermal_Comfort_StudyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DDC39011DA2D5D100C81F66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D65F8061DE4CC60008301B9 /* libz.tbd in Frameworks */,
+				4D65F8041DE4CC57008301B9 /* libresolv.tbd in Frameworks */,
+				4D65F8021DE4CC4F008301B9 /* libicucore.tbd in Frameworks */,
+				4DA8A1EE1DC24D1500E28584 /* UserNotifications.framework in Frameworks */,
+				4D03A37C1DB1656F0095A474 /* MicrosoftBandKit_iOS.framework in Frameworks */,
+				1A116E2A74A9D1B23639915E /* Pods_Thermal_Comfort_Study.framework in Frameworks */,
+				4D65F7F81DE4C4D6008301B9 /* libALPS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDC39181DA2D5D100C81F66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA23899BDEF59C5EB83CD4C1 /* Pods_Thermal_Comfort_StudyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDC39231DA2D5D100C81F66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B2A164607B45E08B1E2189 /* Pods_Thermal_Comfort_StudyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D03A3601DB15D6F0095A474 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				4D03A3631DB15E7F0095A474 /* Activity.swift */,
+				4D03A3651DB15EAB0095A474 /* AdaptiveComfortAction.swift */,
+				4D03A3671DB160800095A474 /* BandDataAggregate.swift */,
+				4D6917C41DB96CD80004D0A9 /* BottomClothing.swift */,
+				4D03A3691DB161020095A474 /* LocalDataStorage.swift */,
+				4D6917C61DB96EC90004D0A9 /* OuterLayerClothing.swift */,
+				4D03A36B1DB161540095A474 /* ThermalComfort.swift */,
+				4D6917C21DB94CA90004D0A9 /* TopClothing.swift */,
+				4DACAF291DBE5FE800F26314 /* SurveyQuestion.swift */,
+				4D35284E1DE5F16D00B850C7 /* Point.swift */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		4D03A3611DB15D7D0095A474 /* packet */ = {
+			isa = PBXGroup;
+			children = (
+				4D27B8361DBA9236000B5F64 /* ActivityDescriptionItem.swift */,
+				4D27B8341DBA8EFF000B5F64 /* ActivityItem.swift */,
+				4D3B6A651DB7D2C200B5186C /* AdaptiveComfortActionItem.swift */,
+				4D03A36D1DB161820095A474 /* BandDataItem.swift */,
+				4D27B8381DBA93C5000B5F64 /* BottomClothingItem.swift */,
+				4D27B83A1DBA94B8000B5F64 /* ClothingInsulationItem.swift */,
+				4D03A3711DB161AB0095A474 /* ExtTemperatureItem.swift */,
+				4D03A3731DB161C00095A474 /* GSRItem.swift */,
+				4D03A36F1DB161980095A474 /* MinuteCaloriesItem.swift */,
+				4D27B83C1DBA95A1000B5F64 /* OuterLayerClothingItem.swift */,
+				4D03A3751DB161CD0095A474 /* SkinTemperatureItem.swift */,
+				4D6917C81DBA86230004D0A9 /* SurveyDataItem.swift */,
+				4D27B83E1DBA9839000B5F64 /* ThermalComfortItem.swift */,
+				4D27B8401DBA98BA000B5F64 /* TopClothingItem.swift */,
+			);
+			name = packet;
+			sourceTree = "<group>";
+		};
+		4D03A3621DB15D830095A474 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				4D2D7F581DA8002900F80E4B /* SensorAndrew.swift */,
+				4D03A3771DB162370095A474 /* MSBandService.swift */,
+				4D35284C1DE5ED5C00B850C7 /* FineGrainData.swift */,
+			);
+			name = service;
+			sourceTree = "<group>";
+		};
+		4D03A37A1DB164FC0095A474 /* setup */ = {
+			isa = PBXGroup;
+			children = (
+				4DDC39071DA2D5D100C81F66 /* AppDelegate.swift */,
+				4D03A3791DB164F30095A474 /* MSBSwift-Bridging-Header.h */,
+				4DDC39111DA2D5D100C81F66 /* Assets.xcassets */,
+				4DDC39131DA2D5D100C81F66 /* LaunchScreen.storyboard */,
+				4DDC390E1DA2D5D100C81F66 /* Thermal_Comfort_Study.xcdatamodeld */,
+				4DDC39161DA2D5D100C81F66 /* Info.plist */,
+			);
+			name = setup;
+			sourceTree = "<group>";
+		};
+		4D65F8071DE4D33D008301B9 /* ALPS */ = {
+			isa = PBXGroup;
+			children = (
+				4D65F7FE1DE4C744008301B9 /* SRWebSocket.h */,
+				4D65F7FD1DE4C731008301B9 /* ALPS.h */,
+			);
+			name = ALPS;
+			sourceTree = "<group>";
+		};
+		4DDC38FB1DA2D5D100C81F66 = {
+			isa = PBXGroup;
+			children = (
+				4DDC39061DA2D5D100C81F66 /* Thermal Comfort Study */,
+				4DDC391E1DA2D5D100C81F66 /* Thermal Comfort StudyTests */,
+				4DDC39291DA2D5D100C81F66 /* Thermal Comfort StudyUITests */,
+				4DDC39051DA2D5D100C81F66 /* Products */,
+				75CDD802BA35B4C6BF6A429E /* Pods */,
+				E60219E6C127377AF6C9AFFF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4DDC39051DA2D5D100C81F66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DDC39041DA2D5D100C81F66 /* Thermal Comfort Study.app */,
+				4DDC391B1DA2D5D100C81F66 /* Thermal Comfort StudyTests.xctest */,
+				4DDC39261DA2D5D100C81F66 /* Thermal Comfort StudyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DDC39061DA2D5D100C81F66 /* Thermal Comfort Study */ = {
+			isa = PBXGroup;
+			children = (
+				4D03A3601DB15D6F0095A474 /* lib */,
+				4D03A3611DB15D7D0095A474 /* packet */,
+				4D03A3621DB15D830095A474 /* service */,
+				4DDC393E1DA2DE5600C81F66 /* ui */,
+				4DDC390B1DA2D5D100C81F66 /* Main.storyboard */,
+				4D03A37A1DB164FC0095A474 /* setup */,
+			);
+			path = "Thermal Comfort Study";
+			sourceTree = "<group>";
+		};
+		4DDC391E1DA2D5D100C81F66 /* Thermal Comfort StudyTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DDC391F1DA2D5D100C81F66 /* Thermal_Comfort_StudyTests.swift */,
+				4DDC39211DA2D5D100C81F66 /* Info.plist */,
+			);
+			path = "Thermal Comfort StudyTests";
+			sourceTree = "<group>";
+		};
+		4DDC39291DA2D5D100C81F66 /* Thermal Comfort StudyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4DDC392A1DA2D5D100C81F66 /* Thermal_Comfort_StudyUITests.swift */,
+				4DDC392C1DA2D5D100C81F66 /* Info.plist */,
+			);
+			path = "Thermal Comfort StudyUITests";
+			sourceTree = "<group>";
+		};
+		4DDC393E1DA2DE5600C81F66 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				4DDC393C1DA2DE5000C81F66 /* ActionReportViewController.swift */,
+				4DDC39091DA2D5D100C81F66 /* LogInViewController.swift */,
+				4DDC39381DA2DAE900C81F66 /* MainActivityViewController.swift */,
+				4DDC393A1DA2DE3E00C81F66 /* SurveyViewController.swift */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+		75CDD802BA35B4C6BF6A429E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				298D764A741123BEDCAA0A82 /* Pods-Thermal Comfort Study.debug.xcconfig */,
+				B24EF13D0F6D58CF68DBC073 /* Pods-Thermal Comfort Study.release.xcconfig */,
+				B6BA2CD2CE3A8F773148EC6F /* Pods-Thermal Comfort StudyTests.debug.xcconfig */,
+				423EA3C8EA7660D1303F0998 /* Pods-Thermal Comfort StudyTests.release.xcconfig */,
+				0791A8719CD056A3BE33C196 /* Pods-Thermal Comfort StudyUITests.debug.xcconfig */,
+				BED09C19DF9E2AD8E512B7BF /* Pods-Thermal Comfort StudyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E60219E6C127377AF6C9AFFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D65F8071DE4D33D008301B9 /* ALPS */,
+				4D65F8051DE4CC60008301B9 /* libz.tbd */,
+				4D65F8031DE4CC57008301B9 /* libresolv.tbd */,
+				4D65F8011DE4CC4F008301B9 /* libicucore.tbd */,
+				4D65F7F71DE4C4D6008301B9 /* libALPS.a */,
+				4DA8A1ED1DC24D1500E28584 /* UserNotifications.framework */,
+				4D03A37B1DB1656F0095A474 /* MicrosoftBandKit_iOS.framework */,
+				0518CDA74CE0AB84329CADFE /* Pods_Thermal_Comfort_Study.framework */,
+				86AA8D45DEF9E13C5B0310F7 /* Pods_Thermal_Comfort_StudyTests.framework */,
+				DAAF98E68AB86D2FC8055D70 /* Pods_Thermal_Comfort_StudyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DDC39031DA2D5D100C81F66 /* Thermal Comfort Study */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDC392F1DA2D5D100C81F66 /* Build configuration list for PBXNativeTarget "Thermal Comfort Study" */;
+			buildPhases = (
+				EC17DF24FFBA26A389F21AE4 /* [CP] Check Pods Manifest.lock */,
+				4DDC39001DA2D5D100C81F66 /* Sources */,
+				4DDC39011DA2D5D100C81F66 /* Frameworks */,
+				4DDC39021DA2D5D100C81F66 /* Resources */,
+				90F537347386FC1778F1A091 /* [CP] Embed Pods Frameworks */,
+				62A66F6CF8F9D537B1E1F0AF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Thermal Comfort Study";
+			productName = "Thermal Comfort Study";
+			productReference = 4DDC39041DA2D5D100C81F66 /* Thermal Comfort Study.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DDC391A1DA2D5D100C81F66 /* Thermal Comfort StudyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDC39321DA2D5D100C81F66 /* Build configuration list for PBXNativeTarget "Thermal Comfort StudyTests" */;
+			buildPhases = (
+				3406FC2862301862CFACDE8D /* [CP] Check Pods Manifest.lock */,
+				4DDC39171DA2D5D100C81F66 /* Sources */,
+				4DDC39181DA2D5D100C81F66 /* Frameworks */,
+				4DDC39191DA2D5D100C81F66 /* Resources */,
+				4B819648B759D686E2811989 /* [CP] Embed Pods Frameworks */,
+				9DFA7C13FF007DF85283FDBD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DDC391D1DA2D5D100C81F66 /* PBXTargetDependency */,
+			);
+			name = "Thermal Comfort StudyTests";
+			productName = "Thermal Comfort StudyTests";
+			productReference = 4DDC391B1DA2D5D100C81F66 /* Thermal Comfort StudyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4DDC39251DA2D5D100C81F66 /* Thermal Comfort StudyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDC39351DA2D5D100C81F66 /* Build configuration list for PBXNativeTarget "Thermal Comfort StudyUITests" */;
+			buildPhases = (
+				03F077CC512338FB79C37E96 /* [CP] Check Pods Manifest.lock */,
+				4DDC39221DA2D5D100C81F66 /* Sources */,
+				4DDC39231DA2D5D100C81F66 /* Frameworks */,
+				4DDC39241DA2D5D100C81F66 /* Resources */,
+				A66F423B8A79CCBB490B0C20 /* [CP] Embed Pods Frameworks */,
+				C9DAEAA6E9857D1B87E3CE9B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DDC39281DA2D5D100C81F66 /* PBXTargetDependency */,
+			);
+			name = "Thermal Comfort StudyUITests";
+			productName = "Thermal Comfort StudyUITests";
+			productReference = 4DDC39261DA2D5D100C81F66 /* Thermal Comfort StudyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DDC38FC1DA2D5D100C81F66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = boschsc;
+				TargetAttributes = {
+					4DDC39031DA2D5D100C81F66 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 39V5Q5W678;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					4DDC391A1DA2D5D100C81F66 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3AFR964FJF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4DDC39031DA2D5D100C81F66;
+					};
+					4DDC39251DA2D5D100C81F66 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3AFR964FJF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4DDC39031DA2D5D100C81F66;
+					};
+				};
+			};
+			buildConfigurationList = 4DDC38FF1DA2D5D100C81F66 /* Build configuration list for PBXProject "Thermal Comfort Study" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DDC38FB1DA2D5D100C81F66;
+			productRefGroup = 4DDC39051DA2D5D100C81F66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DDC39031DA2D5D100C81F66 /* Thermal Comfort Study */,
+				4DDC391A1DA2D5D100C81F66 /* Thermal Comfort StudyTests */,
+				4DDC39251DA2D5D100C81F66 /* Thermal Comfort StudyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DDC39021DA2D5D100C81F66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDC39151DA2D5D100C81F66 /* LaunchScreen.storyboard in Resources */,
+				4DDC39121DA2D5D100C81F66 /* Assets.xcassets in Resources */,
+				4DDC390D1DA2D5D100C81F66 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDC39191DA2D5D100C81F66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDC39241DA2D5D100C81F66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03F077CC512338FB79C37E96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3406FC2862301862CFACDE8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4B819648B759D686E2811989 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Thermal Comfort StudyTests/Pods-Thermal Comfort StudyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62A66F6CF8F9D537B1E1F0AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Thermal Comfort Study/Pods-Thermal Comfort Study-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90F537347386FC1778F1A091 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Thermal Comfort Study/Pods-Thermal Comfort Study-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DFA7C13FF007DF85283FDBD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Thermal Comfort StudyTests/Pods-Thermal Comfort StudyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A66F423B8A79CCBB490B0C20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Thermal Comfort StudyUITests/Pods-Thermal Comfort StudyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9DAEAA6E9857D1B87E3CE9B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Thermal Comfort StudyUITests/Pods-Thermal Comfort StudyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC17DF24FFBA26A389F21AE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DDC39001DA2D5D100C81F66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D6917C91DBA86230004D0A9 /* SurveyDataItem.swift in Sources */,
+				4DACAF2A1DBE5FE800F26314 /* SurveyQuestion.swift in Sources */,
+				4D03A3761DB161CD0095A474 /* SkinTemperatureItem.swift in Sources */,
+				4D03A3721DB161AB0095A474 /* ExtTemperatureItem.swift in Sources */,
+				4D27B8371DBA9236000B5F64 /* ActivityDescriptionItem.swift in Sources */,
+				4D03A3781DB162370095A474 /* MSBandService.swift in Sources */,
+				4D3B6A661DB7D2C200B5186C /* AdaptiveComfortActionItem.swift in Sources */,
+				4DDC393D1DA2DE5000C81F66 /* ActionReportViewController.swift in Sources */,
+				4D27B83F1DBA9839000B5F64 /* ThermalComfortItem.swift in Sources */,
+				4DDC39391DA2DAE900C81F66 /* MainActivityViewController.swift in Sources */,
+				4D03A3741DB161C00095A474 /* GSRItem.swift in Sources */,
+				4D27B83D1DBA95A1000B5F64 /* OuterLayerClothingItem.swift in Sources */,
+				4D27B83B1DBA94B8000B5F64 /* ClothingInsulationItem.swift in Sources */,
+				4D03A36C1DB161540095A474 /* ThermalComfort.swift in Sources */,
+				4D27B8351DBA8EFF000B5F64 /* ActivityItem.swift in Sources */,
+				4D27B8411DBA98BA000B5F64 /* TopClothingItem.swift in Sources */,
+				4D03A3681DB160800095A474 /* BandDataAggregate.swift in Sources */,
+				4DDC390A1DA2D5D100C81F66 /* LogInViewController.swift in Sources */,
+				4DDC39081DA2D5D100C81F66 /* AppDelegate.swift in Sources */,
+				4D6917C31DB94CA90004D0A9 /* TopClothing.swift in Sources */,
+				4D6917C51DB96CD80004D0A9 /* BottomClothing.swift in Sources */,
+				4D6917C71DB96EC90004D0A9 /* OuterLayerClothing.swift in Sources */,
+				4D27B8391DBA93C5000B5F64 /* BottomClothingItem.swift in Sources */,
+				4DDC39101DA2D5D100C81F66 /* Thermal_Comfort_Study.xcdatamodeld in Sources */,
+				4D03A36E1DB161820095A474 /* BandDataItem.swift in Sources */,
+				4D03A3701DB161980095A474 /* MinuteCaloriesItem.swift in Sources */,
+				4DDC393B1DA2DE3E00C81F66 /* SurveyViewController.swift in Sources */,
+				4D35284D1DE5ED5C00B850C7 /* FineGrainData.swift in Sources */,
+				4D03A3641DB15E7F0095A474 /* Activity.swift in Sources */,
+				4D35284F1DE5F16D00B850C7 /* Point.swift in Sources */,
+				4D03A3661DB15EAB0095A474 /* AdaptiveComfortAction.swift in Sources */,
+				4D03A36A1DB161020095A474 /* LocalDataStorage.swift in Sources */,
+				4D2D7F591DA8002900F80E4B /* SensorAndrew.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDC39171DA2D5D100C81F66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDC39201DA2D5D100C81F66 /* Thermal_Comfort_StudyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDC39221DA2D5D100C81F66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDC392B1DA2D5D100C81F66 /* Thermal_Comfort_StudyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DDC391D1DA2D5D100C81F66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DDC39031DA2D5D100C81F66 /* Thermal Comfort Study */;
+			targetProxy = 4DDC391C1DA2D5D100C81F66 /* PBXContainerItemProxy */;
+		};
+		4DDC39281DA2D5D100C81F66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DDC39031DA2D5D100C81F66 /* Thermal Comfort Study */;
+			targetProxy = 4DDC39271DA2D5D100C81F66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4DDC390B1DA2D5D100C81F66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDC390C1DA2D5D100C81F66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4DDC39131DA2D5D100C81F66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDC39141DA2D5D100C81F66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DDC392D1DA2D5D100C81F66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[arch=*]" = "-lstdc++";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Thermal Comfort Study/MSBSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DDC392E1DA2D5D100C81F66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				"OTHER_LDFLAGS[arch=*]" = "-lstdc++";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Thermal Comfort Study/MSBSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DDC39301DA2D5D100C81F66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 298D764A741123BEDCAA0A82 /* Pods-Thermal Comfort Study.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 39V5Q5W678;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Thermal Comfort Study/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boschsc.ThermalComfortStudy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Thermal Comfort Study/MSBSwift-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4DDC39311DA2D5D100C81F66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B24EF13D0F6D58CF68DBC073 /* Pods-Thermal Comfort Study.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 39V5Q5W678;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Thermal Comfort Study/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boschsc.ThermalComfortStudy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Thermal Comfort Study/MSBSwift-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4DDC39331DA2D5D100C81F66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6BA2CD2CE3A8F773148EC6F /* Pods-Thermal Comfort StudyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3AFR964FJF;
+				INFOPLIST_FILE = "Thermal Comfort StudyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boschsc.Thermal-Comfort-StudyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thermal Comfort Study.app/Thermal Comfort Study";
+			};
+			name = Debug;
+		};
+		4DDC39341DA2D5D100C81F66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 423EA3C8EA7660D1303F0998 /* Pods-Thermal Comfort StudyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3AFR964FJF;
+				INFOPLIST_FILE = "Thermal Comfort StudyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boschsc.Thermal-Comfort-StudyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thermal Comfort Study.app/Thermal Comfort Study";
+			};
+			name = Release;
+		};
+		4DDC39361DA2D5D100C81F66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0791A8719CD056A3BE33C196 /* Pods-Thermal Comfort StudyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3AFR964FJF;
+				INFOPLIST_FILE = "Thermal Comfort StudyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boschsc.Thermal-Comfort-StudyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Thermal Comfort Study";
+			};
+			name = Debug;
+		};
+		4DDC39371DA2D5D100C81F66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BED09C19DF9E2AD8E512B7BF /* Pods-Thermal Comfort StudyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3AFR964FJF;
+				INFOPLIST_FILE = "Thermal Comfort StudyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boschsc.Thermal-Comfort-StudyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Thermal Comfort Study";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DDC38FF1DA2D5D100C81F66 /* Build configuration list for PBXProject "Thermal Comfort Study" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDC392D1DA2D5D100C81F66 /* Debug */,
+				4DDC392E1DA2D5D100C81F66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDC392F1DA2D5D100C81F66 /* Build configuration list for PBXNativeTarget "Thermal Comfort Study" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDC39301DA2D5D100C81F66 /* Debug */,
+				4DDC39311DA2D5D100C81F66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDC39321DA2D5D100C81F66 /* Build configuration list for PBXNativeTarget "Thermal Comfort StudyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDC39331DA2D5D100C81F66 /* Debug */,
+				4DDC39341DA2D5D100C81F66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDC39351DA2D5D100C81F66 /* Build configuration list for PBXNativeTarget "Thermal Comfort StudyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDC39361DA2D5D100C81F66 /* Debug */,
+				4DDC39371DA2D5D100C81F66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4DDC390E1DA2D5D100C81F66 /* Thermal_Comfort_Study.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4DDC390F1DA2D5D100C81F66 /* Thermal_Comfort_Study.xcdatamodel */,
+			);
+			currentVersion = 4DDC390F1DA2D5D100C81F66 /* Thermal_Comfort_Study.xcdatamodel */;
+			path = Thermal_Comfort_Study.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4DDC38FC1DA2D5D100C81F66 /* Project object */;
+}

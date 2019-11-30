@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Nul-Tg-4Kz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Thermal Comfort Study-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LogInViewController" customModule="Thermal_Comfort_Study" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0Fd-EK-S79">
+                                <rect key="frame" x="16" y="198" width="343" height="257"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6tJ-bg-zvn">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VLe-d6-WAV">
+                                        <rect key="frame" x="0.0" y="45" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qip-xX-0yX">
+                                        <rect key="frame" x="0.0" y="90" width="343" height="30"/>
+                                        <state key="normal" title="Log In"/>
+                                        <connections>
+                                            <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ic-IY-BNG"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNy-67-Zot">
+                                        <rect key="frame" x="0.0" y="135" width="343" height="122"/>
+                                        <string key="text">Before Logging in, please make sure that:
+1. You are logged in to the Microsoft Band app and have the app running
+2. Your Microsoft Band is paired with your phone
+3. You are wearing the band</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Fd-EK-S79" secondAttribute="trailing" id="Gri-Ou-Rk2"/>
+                            <constraint firstItem="0Fd-EK-S79" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="134" id="Rgb-L9-eHI"/>
+                            <constraint firstItem="0Fd-EK-S79" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tDC-G8-CYp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Thermal Comfort Study" id="dRt-AE-hDX"/>
+                    <connections>
+                        <outlet property="logInButton" destination="Qip-xX-0yX" id="FS1-oG-jEo"/>
+                        <outlet property="passwordTextField" destination="VLe-d6-WAV" id="wjP-G6-gqH"/>
+                        <outlet property="usernameTextField" destination="6tJ-bg-zvn" id="eGi-oN-hLc"/>
+                        <segue destination="f7K-g3-0DU" kind="show" identifier="goToMainActivity" id="zkm-3f-MfO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="38.23088455772114"/>
+        </scene>
+        <!--Main Activity View Controller-->
+        <scene sceneID="vyO-Fe-A2c">
+            <objects>
+                <viewController id="f7K-g3-0DU" customClass="MainActivityViewController" customModule="Thermal_Comfort_Study" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gw3-XE-FFY"/>
+                        <viewControllerLayoutGuide type="bottom" id="UKE-Lw-4F2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Icg-20-5V7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ft1-69-Ctg">
+                                <rect key="frame" x="16" y="198" width="343" height="165"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8b-JX-YAg">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <state key="normal" title="Start Survey"/>
+                                        <connections>
+                                            <action selector="startSurveyButton:" destination="f7K-g3-0DU" eventType="touchUpInside" id="hQn-hm-c6Q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nX-JQ-KkZ">
+                                        <rect key="frame" x="0.0" y="45" width="343" height="30"/>
+                                        <state key="normal" title="Report Thermal Comfort Actions"/>
+                                        <connections>
+                                            <action selector="reportActionReportButton:" destination="f7K-g3-0DU" eventType="touchUpInside" id="ozT-fh-GSo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaH-rF-dhE">
+                                        <rect key="frame" x="0.0" y="90" width="343" height="30"/>
+                                        <state key="normal" title="Log Out"/>
+                                        <connections>
+                                            <action selector="logOutButton:" destination="f7K-g3-0DU" eventType="touchUpInside" id="gxe-8C-3ti"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3C7-k4-DrF">
+                                        <rect key="frame" x="0.0" y="135" width="343" height="30"/>
+                                        <state key="normal" title="Start Streaming"/>
+                                        <connections>
+                                            <action selector="startStreamingButton:" destination="f7K-g3-0DU" eventType="touchUpInside" id="bvP-k2-PEg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Band Connection Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlE-u0-Bq8">
+                                <rect key="frame" x="16" y="72" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ft1-69-Ctg" secondAttribute="trailing" id="08W-1T-eqS"/>
+                            <constraint firstItem="hlE-u0-Bq8" firstAttribute="leading" secondItem="Icg-20-5V7" secondAttribute="leadingMargin" id="F2i-A5-8D3"/>
+                            <constraint firstItem="hlE-u0-Bq8" firstAttribute="top" secondItem="Gw3-XE-FFY" secondAttribute="bottom" constant="8" id="Kat-4m-3AR"/>
+                            <constraint firstItem="ft1-69-Ctg" firstAttribute="top" secondItem="Gw3-XE-FFY" secondAttribute="bottom" constant="134" id="MaN-OE-lRv"/>
+                            <constraint firstItem="ft1-69-Ctg" firstAttribute="trailing" secondItem="Icg-20-5V7" secondAttribute="trailingMargin" id="Mtn-L0-l1d"/>
+                            <constraint firstItem="hlE-u0-Bq8" firstAttribute="trailing" secondItem="Icg-20-5V7" secondAttribute="trailingMargin" id="Yz4-Q2-VCW"/>
+                            <constraint firstItem="ft1-69-Ctg" firstAttribute="leading" secondItem="Icg-20-5V7" secondAttribute="leadingMargin" id="ggD-uX-bqk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="connectionStatusLabel" destination="hlE-u0-Bq8" id="xz3-Xc-nYR"/>
+                        <outlet property="startButton" destination="3C7-k4-DrF" id="UJb-ah-L7M"/>
+                        <segue destination="emi-gz-jic" kind="show" identifier="goToSurvey" id="noT-FJ-He6"/>
+                        <segue destination="Oos-pR-DdS" kind="show" identifier="goToActionReport" id="B2v-nI-xEu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjd-Pi-rF0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1924" y="37.331334332833585"/>
+        </scene>
+        <!--Survey-->
+        <scene sceneID="3jC-bH-Ic7">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="emi-gz-jic" customClass="SurveyViewController" customModule="Thermal_Comfort_Study" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lZv-Ve-SFl"/>
+                        <viewControllerLayoutGuide type="bottom" id="pwD-gt-H0z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VHg-YH-8w6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="l4P-KV-yZh">
+                                <rect key="frame" x="8" y="64" width="359" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you feel about your thermal environment?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gd-bY-gVS">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="66.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vRh-iX-q0s">
+                                        <rect key="frame" x="0.0" y="71.5" width="359" height="300"/>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If other, please describe:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qz-cG-8TZ">
+                                        <rect key="frame" x="0.0" y="376.5" width="359" height="28.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Other activity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9NW-6l-l0u">
+                                        <rect key="frame" x="0.0" y="410" width="359" height="41.5"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QtN-xA-1cw">
+                                        <rect key="frame" x="0.0" y="456.5" width="359" height="41.5"/>
+                                        <state key="normal" title="Next Question"/>
+                                        <connections>
+                                            <action selector="next:" destination="emi-gz-jic" eventType="touchUpInside" id="ijR-TJ-iKQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ol-Ra-X5a">
+                                        <rect key="frame" x="0.0" y="503" width="359" height="41.5"/>
+                                        <state key="normal" title="Previous Question"/>
+                                        <connections>
+                                            <action selector="previous:" destination="emi-gz-jic" eventType="touchUpInside" id="rlk-Ga-8K0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnu-N5-EQN">
+                                        <rect key="frame" x="0.0" y="549.5" width="359" height="53.5"/>
+                                        <state key="normal" title="Submit Survey"/>
+                                        <connections>
+                                            <action selector="submit:" destination="emi-gz-jic" eventType="touchUpInside" id="ywp-FR-BUj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l4P-KV-yZh" firstAttribute="top" secondItem="lZv-Ve-SFl" secondAttribute="bottom" id="3ha-Hd-uUf"/>
+                            <constraint firstItem="pwD-gt-H0z" firstAttribute="top" secondItem="l4P-KV-yZh" secondAttribute="bottom" id="AUX-QC-z6x"/>
+                            <constraint firstAttribute="trailing" secondItem="l4P-KV-yZh" secondAttribute="trailing" constant="8" id="AnT-k5-LeA"/>
+                            <constraint firstItem="l4P-KV-yZh" firstAttribute="leading" secondItem="VHg-YH-8w6" secondAttribute="leading" constant="8" id="Sxu-yd-OPl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Survey" id="Exi-WB-Us7"/>
+                    <connections>
+                        <outlet property="nextButton" destination="QtN-xA-1cw" id="gAO-5v-OFh"/>
+                        <outlet property="optionPicker" destination="vRh-iX-q0s" id="0b7-8y-IcZ"/>
+                        <outlet property="otherLabel" destination="9qz-cG-8TZ" id="hGc-or-eyh"/>
+                        <outlet property="otherTextField" destination="9NW-6l-l0u" id="f7L-nU-Ifo"/>
+                        <outlet property="previousButton" destination="1ol-Ra-X5a" id="4Cf-HL-avo"/>
+                        <outlet property="questionLabel" destination="9gd-bY-gVS" id="6nT-xU-TnJ"/>
+                        <outlet property="submitSurveyButton" destination="qnu-N5-EQN" id="VoQ-rj-WA5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7n-Wg-O3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3024.8000000000002" y="-378.26086956521743"/>
+        </scene>
+        <!--Aciton Report-->
+        <scene sceneID="gu8-iu-IvX">
+            <objects>
+                <viewController id="Oos-pR-DdS" customClass="ActionReportViewController" customModule="Thermal_Comfort_Study" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xTy-7b-ltx"/>
+                        <viewControllerLayoutGuide type="bottom" id="a6B-dt-JoT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pjf-2L-xgh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What action(s) did you take? (scroll)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxZ-AN-bh6">
+                                <rect key="frame" x="16" y="72" width="343" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hJP-Fy-y3s">
+                                <rect key="frame" x="16" y="105" width="343" height="195"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJY-3F-edE">
+                                <rect key="frame" x="0.0" y="629" width="375" height="30"/>
+                                <state key="normal" title="Submit Action Report"/>
+                                <connections>
+                                    <action selector="submitActionReport:" destination="Oos-pR-DdS" eventType="touchUpInside" id="IxA-cC-7s3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you feel about your thermal environment?" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5U-5b-iCA">
+                                <rect key="frame" x="16" y="346.5" width="343" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HC1-Af-lyP">
+                                <rect key="frame" x="16" y="405" width="343" height="216"/>
+                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Other:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i32-cM-vOV">
+                                <rect key="frame" x="16" y="308" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hJP-Fy-y3s" firstAttribute="leading" secondItem="Pjf-2L-xgh" secondAttribute="leadingMargin" id="0me-Hr-M1T"/>
+                            <constraint firstItem="tJY-3F-edE" firstAttribute="leading" secondItem="Pjf-2L-xgh" secondAttribute="leading" id="1q2-F1-5Bj"/>
+                            <constraint firstItem="hJP-Fy-y3s" firstAttribute="trailing" secondItem="Pjf-2L-xgh" secondAttribute="trailingMargin" id="1zA-aS-Ev1"/>
+                            <constraint firstItem="C5U-5b-iCA" firstAttribute="top" secondItem="hJP-Fy-y3s" secondAttribute="bottom" constant="46.5" id="4Gf-dH-76N"/>
+                            <constraint firstItem="i32-cM-vOV" firstAttribute="trailing" secondItem="Pjf-2L-xgh" secondAttribute="trailingMargin" id="7kU-jU-dGK"/>
+                            <constraint firstItem="hJP-Fy-y3s" firstAttribute="trailing" secondItem="Pjf-2L-xgh" secondAttribute="trailingMargin" id="7v2-2r-DxK"/>
+                            <constraint firstItem="C5U-5b-iCA" firstAttribute="trailing" secondItem="Pjf-2L-xgh" secondAttribute="trailingMargin" id="CTS-i3-hcv"/>
+                            <constraint firstItem="ZxZ-AN-bh6" firstAttribute="trailing" secondItem="Pjf-2L-xgh" secondAttribute="trailingMargin" id="DUa-5n-oey"/>
+                            <constraint firstItem="HC1-Af-lyP" firstAttribute="trailing" secondItem="Pjf-2L-xgh" secondAttribute="trailingMargin" id="GkZ-Ex-gsd"/>
+                            <constraint firstItem="hJP-Fy-y3s" firstAttribute="leading" secondItem="Pjf-2L-xgh" secondAttribute="leadingMargin" id="Hgp-25-Acc"/>
+                            <constraint firstAttribute="trailing" secondItem="tJY-3F-edE" secondAttribute="trailing" id="IQz-fK-umt"/>
+                            <constraint firstItem="ZxZ-AN-bh6" firstAttribute="leading" secondItem="Pjf-2L-xgh" secondAttribute="leadingMargin" id="LAh-Sz-CC6"/>
+                            <constraint firstItem="hJP-Fy-y3s" firstAttribute="top" secondItem="ZxZ-AN-bh6" secondAttribute="bottom" constant="7.5" id="Ono-aq-TJ7"/>
+                            <constraint firstItem="C5U-5b-iCA" firstAttribute="top" secondItem="i32-cM-vOV" secondAttribute="bottom" constant="8.5" id="RC3-HC-T3m"/>
+                            <constraint firstItem="i32-cM-vOV" firstAttribute="leading" secondItem="Pjf-2L-xgh" secondAttribute="leadingMargin" id="RiD-lc-7bS"/>
+                            <constraint firstItem="HC1-Af-lyP" firstAttribute="leading" secondItem="Pjf-2L-xgh" secondAttribute="leadingMargin" id="Um9-QF-wkc"/>
+                            <constraint firstItem="HC1-Af-lyP" firstAttribute="top" secondItem="C5U-5b-iCA" secondAttribute="bottom" constant="8" id="WlS-4h-8IX"/>
+                            <constraint firstItem="ZxZ-AN-bh6" firstAttribute="top" secondItem="xTy-7b-ltx" secondAttribute="bottom" constant="8" id="YOH-d1-x6D"/>
+                            <constraint firstItem="hJP-Fy-y3s" firstAttribute="top" secondItem="ZxZ-AN-bh6" secondAttribute="bottom" constant="7.5" id="bcY-Qb-QNq"/>
+                            <constraint firstItem="tJY-3F-edE" firstAttribute="top" secondItem="HC1-Af-lyP" secondAttribute="bottom" constant="8" id="dAO-2A-g2L"/>
+                            <constraint firstItem="C5U-5b-iCA" firstAttribute="leading" secondItem="Pjf-2L-xgh" secondAttribute="leadingMargin" id="ome-sw-7yd"/>
+                            <constraint firstItem="a6B-dt-JoT" firstAttribute="top" secondItem="tJY-3F-edE" secondAttribute="bottom" constant="8" id="vzG-CC-dMa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Aciton Report" id="1us-ff-34o"/>
+                    <connections>
+                        <outlet property="actionTableView" destination="hJP-Fy-y3s" id="tc0-Fv-NhS"/>
+                        <outlet property="submitButton" destination="tJY-3F-edE" id="b5r-vc-1F7"/>
+                        <outlet property="thermalActionOtherTextField" destination="i32-cM-vOV" id="jRO-5l-vzf"/>
+                        <outlet property="thermalComfortPicker" destination="HC1-Af-lyP" id="ePp-zl-Qm9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fzc-Or-rrE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3024.8000000000002" y="443.92803598200902"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Y62-YU-Sgo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nul-Tg-4Kz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qmY-la-6UG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FA5-QK-Txt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Rr-Rt-iFP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_Thermal_Comfort_StudyTests {
+  umbrella header "Pods-Thermal Comfort StudyTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
